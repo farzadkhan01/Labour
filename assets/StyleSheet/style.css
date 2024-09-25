@@ -1,0 +1,559 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --links-color: rgb(228, 0, 59);
+    --light-black: #00000087;
+    --white: #ffffff;
+}
+
+a {
+    text-decoration: none;
+}
+
+p {
+    font-size: 20px;
+    font-weight: 400;
+    color: black;
+}
+
+h2 {
+    font-size: 1.8rem;
+}
+
+body {
+
+    font-family: "Mingzat", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+}
+
+@media (min-width: 992px) {
+    .w-lg-50 {
+        width: 50%;
+    }
+}
+
+@media (max-width: 768px) {
+
+    .container,
+    .container-md,
+    .container-sm {
+        max-width: 100%;
+    }
+}
+
+/* =========================================================== */
+
+.navbar-brand img {
+    width: 20%;
+    height: 100%;
+}
+
+.separation {
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    text-align: end;
+}
+
+.nav-links h6 {
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+.nav-links button {
+    border: none;
+}
+
+
+.nav-links button a,
+.hero-caption a {
+    padding: 10px 30px;
+    background: var(--links-color);
+    color: white;
+    font-size: 16px;
+}
+
+.nav-links button a {
+    padding: 4px 15px;
+    font-size: 12px;
+}
+
+.dropdown-menu {
+    width: 100vw;
+}
+
+.nav-link {
+    font-size: 16px;
+    color: #0000009c;
+}
+
+.hero-section {
+    overflow: hidden;
+}
+
+.dropdown-info h2 {
+    font-size: 12px;
+    color: #0000009c;
+    font-weight: 600;
+    margin: 0;
+}
+
+.dropdown-info li a {
+    font-size: 12px;
+    color: var(--light-black);
+}
+
+.dropdown-search li {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.dropdown-search {
+    transform: translate(-200px, 39px) !important;
+    width: 30rem;
+    padding: 15px;
+}
+
+.dropdown-search input:focus {
+    outline: none;
+}
+
+.dropdown-search input {
+    width: 26rem;
+    border-radius: 5px;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+    padding: 2px 13px;
+    border: 1px solid var(--light-black);
+    border-right: none;
+}
+
+.custom-toggle::after {
+    display: none;
+}
+
+.dropdown-search i {
+    border: 1px solid var(--light-black);
+    border-radius: 5px;
+    border-left: none;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    padding: 2px 13px;
+}
+
+.nav-referances a {
+    color: var(--links-color);
+    font-size: 16px;
+    padding-right: 20px;
+}
+
+.hero-image {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.hero-image img {
+    width: 100%;
+    height: 56rem;
+    display: block;
+}
+
+.hero-image::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 56rem;
+    background: linear-gradient(to bottom, #ffffff00, #000000a6);
+    z-index: 1;
+    opacity: 1.5;
+}
+
+.hero-caption h1 {
+    font-family: "Poppins", "Segoe UI", "Helvetica Neue", "Noto Sans", "Liberation Sans", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    font-weight: 900 !important;
+    color: var(--white);
+    font-size: 8rem;
+    margin-top: 29rem;
+}
+
+/* Section - 2 Message */
+
+.message {
+    margin-top: 6rem;
+}
+
+.message-caption h2 {
+    font-size: 1.8rem;
+    font-weight: 600;
+    color: var(--links-color);
+}
+
+.message-video iframe {
+    width: 45rem;
+    height: 25rem;
+    border-radius: 15px;
+}
+
+/* Section - 3 Joining */
+.joining-carousel .carousel-indicators [data-bs-target] {
+    box-sizing: content-box;
+    flex: none;
+    width: auto;
+    height: auto;
+    padding: 0;
+    margin: 0;
+    text-indent: 0;
+    cursor: pointer;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 0;
+    border-top: none;
+    border-bottom: none;
+    /* styling of button */
+    font-size: 1.125rem;
+    margin-right: 2rem !important;
+    padding: 10px 20px;
+    background-color: #f8f8f8;
+    color: black;
+    border-radius: 10px;
+    opacity: 1;
+}
+
+.carousel-indicators .active {
+    background-color: var(--links-color) !important;
+    color: white !important;
+    transition: all 0.1s ease-in;
+}
+
+.carousel-indicators {
+    position: relative;
+    margin: 0;
+    justify-content: start;
+}
+
+.carousel-inner {
+    border: 1px solid #0000002b;
+    border-radius: 15px;
+}
+
+.carousel-text a {
+    color: var(--links-color);
+}
+
+.carousel-link {
+    margin-top: 10rem;
+}
+
+.special {
+    margin-top: 6.5rem;
+}
+
+.carousel-information p {
+    line-height: 24px;
+    padding-top: 18px;
+    font-weight: 200 !important;
+}
+
+.carousel-information {
+    padding: 3rem 4rem 2rem 3rem !important;
+}
+
+/* Section - 4 change */
+.change-img {
+    position: relative;
+    left: 0;
+}
+
+.change-img img {
+    height: 47.5rem;
+    object-fit: cover;
+}
+
+.change-img::before {
+    content: "";
+    position: absolute;
+    top: 0 !important;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to bottom, #ffffff00, #00000036, #000000bd);
+    z-index: 1 !important;
+    opacity: 1.5;
+}
+
+.change-caption {
+    display: flex;
+    align-items: end;
+    justify-content: space-between;
+    position: relative;
+    z-index: 2;
+    margin-top: -12rem;
+}
+
+.change-caption h3 {
+    font-family: "Poppins", "Segoe UI", "Helvetica Neue", "Noto Sans", "Liberation Sans", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    font-weight: 900 !important;
+    color: var(--white);
+    font-size: 8rem;
+}
+
+.change-caption a {
+    padding: 10px 30px;
+    background: var(--links-color);
+    color: white;
+    font-size: 16px;
+}
+
+/* Section - 5 Team */
+.Team {
+    padding-top: 5rem;
+    padding-bottom: 4rem;
+}
+
+.team-img {
+    height: 30rem;
+    position: relative;
+}
+
+.team-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+    position: relative;
+    z-index: -1;
+    filter: brightness(90%);
+}
+
+.overlay {
+    position: absolute !important;
+    left: 0;
+    top: 0;
+    z-index: 1 !important;
+    width: 100%;
+    height: 100%;
+    background-color: #00000080 !important;
+}
+
+
+.team-caption {
+    display: flex;
+    align-items: end;
+    justify-content: space-between;
+    padding: 17rem 3rem 0rem 3rem;
+
+}
+
+.team-caption h3 {
+    line-height: 46px;
+    font-size: 3.15rem;
+    color: white;
+}
+
+.team-caption p {
+    line-height: 23px;
+    font-size: 1.12225rem;
+    color: white;
+    padding-top: 14px;
+}
+
+.team-link a {
+    padding: 10px 30px;
+    background: var(--links-color);
+    color: white;
+    font-size: 16px;
+}
+
+.team-information {
+    height: 30rem;
+    background-image:
+        linear-gradient(to right, rgb(0 0 0 / 67%), rgb(0 0 0 / 8%)),
+        url("../images/Joining.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 15px;
+}
+
+/*  Section - 5 Team  */
+.footer-information {
+    padding: 0 3rem;
+}
+
+.footer-logo a {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.footer-logo a img {
+    filter: contrast(0.5);
+}
+
+.footer-logo a img,
+.footer-logo h4 {
+    width: 47px;
+    font-size: 39px;
+    letter-spacing: -3px;
+    font-weight: 700;
+    color: #000000b3;
+}
+
+.footer-logo h4 {
+    margin: 0 0 0 -7px;
+}
+
+.dropdown-info p {
+    font-size: 12px;
+    color: var(--light-black);
+    margin: 0;
+    padding: 3px 0;
+}
+
+.footer-links h2 {
+    margin: 17px 0 8px 0;
+}
+
+.social-links i {
+    font-size: 25px;
+    margin: 0 5px;
+    color: var(--light-black);
+}
+
+.copyright a:first-of-type {
+    margin-left: 40px;
+}
+
+.copyright a {
+    margin: 0 15px;
+}
+
+.dropdown-about {
+    left: 19rem !important;
+    width: 14rem;
+    transform: translate(-303px, -40px) !important;
+}
+
+
+.btn.show {
+    border: none;
+}
+
+.dropup img {
+    width: 25px;
+}
+
+.dropdown-about li a,
+.dropdown-about li {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: black;
+    padding: 3px 0;
+}
+
+.dropdown-about li img {
+    width: 24px;
+
+}
+
+.dropdown-about li a i {
+    font-size: 16px px;
+    color: black;
+}
+
+.bi-envelope-fill {
+    font-size: 16px px;
+    color: #0088ff;
+}
+
+.dropdown-about li a h5 {
+    font-size: 14px;
+    padding: 0 10px;
+}
+
+.dropdown-about li a h3 {
+    font-size: 14px;
+    margin: 0;
+}
+
+.special li a i {
+    font-size: 17px;
+    padding-left: 12px;
+    transform: rotate(-45deg);
+    margin: 0px 0px -10px -4px;
+}
+
+.special li {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    padding: 5px 0;
+}
+
+/* Media Quary */
+@media only screen and (max-width: 1400px) {
+
+    /* hero caption */
+    .hero-caption h1 {
+        font-size: 5rem;
+    }
+
+    .nav-links button a,
+    .hero-caption a {
+        font-size: 14px;
+    }
+
+    .joining-carousel .carousel-indicators [data-bs-target] {
+        font-size: 1rem;
+        margin-right: 1rem !important;
+    }
+}
+
+@media only screen and (max-width: 1400px) {
+
+    .footer-logo a img,
+    .footer-logo h4 {
+        width: 37px;
+        font-size: 27px;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+
+    p {
+        font-size: 16px;
+        font-weight: 400;
+        color: black;
+    }
+
+
+    /* <!-- Section - 4 change --> */
+    .change-caption h3 {
+        font-size: 6rem;
+    }
+
+    /* <!-- Section - 5 Team --> */
+    .Team {
+        padding-top: 8rem;
+        padding-bottom: 4rem;
+    }
+
+    /* carousel-slides */
+    .joining-carousel .carousel-indicators [data-bs-target] {
+        font-size: 12px;
+        margin-right: 1rem !important;
+    }
+
+    .carousel-information {
+        padding: 2rem 3rem 1rem 2rem !important;
+    }
+}
