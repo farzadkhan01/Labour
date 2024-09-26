@@ -152,6 +152,43 @@ body {
     padding-right: 20px;
 }
 
+
+/* offcanvas */
+.offcanvas.show:not(.hiding),
+.offcanvas.showing {
+    width: 100vw;
+}
+
+.btn-close {
+    width: 2em;
+}
+
+.offcanvas-search input:focus {
+    outline: none;
+}
+
+.offcanvas-search input {
+    border: 1px solid #00000042;
+    border-radius: 5px;
+    border-top-right-radius: 0;
+    border-right: 0;
+    border-bottom-right-radius: 0;
+    padding: 10px 15px;
+    font-size: 12px;
+    color: #00000042;
+
+}
+
+.offcanvas-search i {
+    font-size: 12px;
+    border: 1px solid #00000042;
+    border-radius: 5px;
+    border-left: none;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    padding: 10px 15px;
+}
+
 .hero-image {
     background-image: linear-gradient(to bottom, rgb(0 0 0 / 0%), rgb(0 0 0 / 76%)),
         url("../images/hero-back.jpg");

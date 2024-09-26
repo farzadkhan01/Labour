@@ -26,17 +26,36 @@
                 <div class="hero-positioning bg-white">
 
                     <div class="container">
-                        <nav class="navbar navbar-expand-lg navbar-light mt-4">
+                        <nav class="navbar navbar-expand-lg navbar-light mt-2">
                             <div class="container-fluid ">
-                                <div class="nav-left w-lg-50">
+                                <div class="nav-left d-flex align-items-center w-lg-50">
                                     <a class="navbar-brand" href="#">
                                         <img src="assets/images/Labour_Party_(UK)_logo.svg.png" alt="logo">
                                     </a>
-                                    <button class="navbar-toggler float-end" type="button" data-bs-toggle="collapse"
-                                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                                        aria-expanded="false" aria-label="Toggle navigation">
-                                        <span class="navbar-toggler-icon"></span>
+                                    <button class="btn d-lg-none border-1 fs-1 px-0 py-0 align-self-end" type="button"
+                                        data-bs-toggle="offcanvas" data-bs-target="#demo">
+                                        <i class="bi bi-list"></i>
                                     </button>
+                                    <div class="offcanvas-area d-lg-none">
+                                        <div class="offcanvas offcanvas-end" id="demo">
+                                            <div class="offcanvas-header">
+                                                <h1 class="offcanvas-title">
+                                                    <a class="navbar-brand" href="#">
+                                                        <img src="assets/images/Labour_Party_(UK)_logo.svg.png"
+                                                            alt="logo">
+                                                    </a>
+                                                </h1>
+                                                <button type="button" class="btn-close"
+                                                    data-bs-dismiss="offcanvas"></button>
+                                            </div>
+                                            <div class="offcanvas-body">
+                                                <div class="offcanvas-search d-flex align-items-center">
+                                                    <input type="search" class="w-100" placeholder="Search The Labour Party">
+                                                    <i class="bi bi-search"></i>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
                                 <div class="collapse navbar-collapse separation d-none d-lg-block "
                                     id="navbarSupportedContent">
@@ -267,6 +286,8 @@
                         </nav>
                     </div>
 
+                    <!-- Offcanvas -->
+
                 </div>
                 <!-- hero caption -->
                 <div class="hero-positioning">
@@ -291,8 +312,10 @@
                 <h2>A message from Prime Minister, Keir Starmer</h2>
                 <p>I’d like to say a heartfelt thank you for the support you gave us on Thursday 4 July.</p>
 
-                <p class="mx-3 responsive">A mandate like this comes with great responsibility. I promise you this: Labour will
-                    <br class="d-none d-lg-block">govern for the whole country. We will put the chaos of the last 14 years behind us, turn <br class="d-none d-lg-block">the
+                <p class="mx-3 responsive">A mandate like this comes with great responsibility. I promise you this:
+                    Labour will
+                    <br class="d-none d-lg-block">govern for the whole country. We will put the chaos of the last 14
+                    years behind us, turn <br class="d-none d-lg-block">the
                     page and start to rebuild.
                 </p>
 
@@ -431,7 +454,7 @@
                                     <div class="col-12 col-md-6 overflow-hidden mb-1">
                                         <img src="assets/images/slide5.jpg" class="w-100 mb-5 mb-md-0" alt="">
                                     </div>
-                                    
+
                                 </div>
                             </div>
                         </div>
