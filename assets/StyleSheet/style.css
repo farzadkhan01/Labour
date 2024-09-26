@@ -153,27 +153,18 @@ body {
 }
 
 .hero-image {
-    position: relative;
-    width: 100%;
-    height: 100%;
+    background-image: linear-gradient(to bottom, rgb(0 0 0 / 0%), rgb(0 0 0 / 76%)),
+        url("../images/hero-back.jpg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
 }
 
-.hero-image img {
-    width: 100%;
-    height: 56rem;
-    display: block;
-}
-
-.hero-image::before {
-    content: "";
-    position: absolute;
+hero-positioning {
+    position: fixed;
     top: 0;
     left: 0;
-    width: 100%;
-    height: 56rem;
-    background: linear-gradient(to bottom, #ffffff00, #000000a6);
-    z-index: 1;
-    opacity: 1.5;
 }
 
 .hero-caption h1 {
@@ -181,13 +172,13 @@ body {
     font-weight: 900 !important;
     color: var(--white);
     font-size: 8rem;
-    margin-top: 29rem;
+    padding-top: 29rem;
 }
 
 /* Section - 2 Message */
 
 .message {
-    margin-top: 6rem;
+    padding-top: 6rem;
 }
 
 .message-caption h2 {
@@ -237,6 +228,11 @@ body {
     position: relative;
     margin: 0;
     justify-content: start;
+    display: flow;
+}
+
+.carousel-indicators button {
+    margin-bottom: 3rem !important;
 }
 
 .carousel-inner {
@@ -512,10 +508,6 @@ body {
         font-size: 14px;
     }
 
-    .joining-carousel .carousel-indicators [data-bs-target] {
-        font-size: 1rem;
-        margin-right: 1rem !important;
-    }
 }
 
 @media only screen and (max-width: 1400px) {
@@ -529,16 +521,21 @@ body {
 
 @media only screen and (max-width: 768px) {
 
-    p {
-        font-size: 16px;
-        font-weight: 400;
-        color: black;
+    /* <!-- Section - 2 Message --> */
+    .message-video iframe {
+        width: 100%;
+        height: 25rem;
+        border-radius: 15px;
     }
-
 
     /* <!-- Section - 4 change --> */
     .change-caption h3 {
         font-size: 6rem;
+    }
+
+    .change-caption {
+        align-items: start;
+        flex-direction: column;
     }
 
     /* <!-- Section - 5 Team --> */
@@ -548,12 +545,73 @@ body {
     }
 
     /* carousel-slides */
-    .joining-carousel .carousel-indicators [data-bs-target] {
-        font-size: 12px;
-        margin-right: 1rem !important;
-    }
 
     .carousel-information {
-        padding: 2rem 3rem 1rem 2rem !important;
+        padding: 2rem 2rem 1rem 2rem !important;
+    }
+
+    .special,
+    .carousel-link {
+        margin-top: 4.5rem;
+    }
+
+}
+
+@media only screen and (max-width: 425px) {
+
+    /* <!-- Section - 1 Hero Section --> */
+    .hero-caption h1 {
+        padding-top: 12rem;
+    }
+
+    .hero-caption button {
+        margin-top: 1rem !important;
+    }
+
+    .nav-links button a,
+    .hero-caption a,
+    .change-caption a,
+    .team-link a {
+
+        font-size: 12px;
+    }
+
+    /* <!-- Section - 4 change --> */
+    .change-img img {
+        height: 26.5rem;
+        object-fit: cover;
+    }
+
+    .change-caption h3,
+    .hero-caption h1 {
+        font-size: 4rem;
+    }
+
+
+    /* <!-- Section - 5 Team --> */
+    .team-caption {
+        align-items: start;
+        flex-direction: column;
+        padding: 40px 0;
+        margin: 23px;
+    }
+
+    .team-information {
+        height: 100%;
+    }
+
+    .team-caption h3>br {
+        display: none !important;
+    }
+
+    .team-caption p {
+        margin-bottom: 26px;
+    }
+
+    .joining-carousel .carousel-indicators [data-bs-target] {
+        padding: 7px 17px;
+        font-size: 12px;
+        margin-right: 20px !important;
+        margin-bottom: 20px !important;
     }
 }
