@@ -86,7 +86,15 @@ body {
     width: 100vw;
 }
 
-.nav-link {
+.parent-offcanvas {
+    padding: 9px 0;
+
+
+}
+
+.nav-link,
+.parent-offcanvas,
+.parent-offcanvas a {
     font-size: 16px;
     color: #0000009c;
 }
@@ -102,9 +110,14 @@ body {
     margin: 0;
 }
 
-.dropdown-info li a {
+.dropdown-info li a,
+.subOffcanvas a {
     font-size: 12px;
     color: var(--light-black);
+}
+
+.subOffcanvas a {
+    font-size: 14px;
 }
 
 .dropdown-search li {
@@ -146,12 +159,12 @@ body {
     padding: 2px 13px;
 }
 
-.nav-referances a {
-    color: var(--links-color);
+.nav-referances a,
+.offcanvas-custom-links a {
+    color: var(--links-color) !important;
     font-size: 16px;
     padding-right: 20px;
 }
-
 
 /* offcanvas */
 .offcanvas.show:not(.hiding),
@@ -167,27 +180,42 @@ body {
     outline: none;
 }
 
-.offcanvas-search input {
+.offcanvas-search span:focus-within {
+    border: 1px solid #000000;
+}
+
+.offcanvas-search span {
+    display: flex;
+    align-items: center;
     border: 1px solid #00000042;
-    border-radius: 5px;
-    border-top-right-radius: 0;
-    border-right: 0;
-    border-bottom-right-radius: 0;
+    border-radius: 6px;
+    width: 100%;
+}
+
+.offcanvas-back i {
+    font-size: 22px;
+    color: var(--light-black);
+}
+
+.offcanvas-search input {
     padding: 10px 15px;
+    border: none;
     font-size: 12px;
     color: #00000042;
-
+    border-radius: 6px;
 }
 
 .offcanvas-search i {
     font-size: 12px;
-    border: 1px solid #00000042;
-    border-radius: 5px;
-    border-left: none;
-    border-top-left-radius: 0;
-    border-bottom-left-radius: 0;
+    border: none;
     padding: 10px 15px;
 }
+
+.offcanvas-custom-links a i {
+    margin: 0 0 -4px 10px;
+}
+
+
 
 .hero-image {
     background-image: linear-gradient(to bottom, rgb(0 0 0 / 0%), rgb(0 0 0 / 76%)),

@@ -29,34 +29,319 @@
                         <nav class="navbar navbar-expand-lg navbar-light mt-2">
                             <div class="container-fluid ">
                                 <div class="nav-left d-flex align-items-center w-lg-50">
+
                                     <a class="navbar-brand" href="#">
                                         <img src="assets/images/Labour_Party_(UK)_logo.svg.png" alt="logo">
                                     </a>
-                                    <button class="btn d-lg-none border-1 fs-1 px-0 py-0 align-self-end" type="button"
-                                        data-bs-toggle="offcanvas" data-bs-target="#demo">
-                                        <i class="bi bi-list"></i>
+
+                                    <!-- Trigger button for Parent Offcanvas -->
+                                    <button class="btn d-lg-none" type="button" data-bs-toggle="offcanvas"
+                                        data-bs-target="#parentOffcanvas" aria-controls="parentOffcanvas">
+                                        <i class="bi bi-list fs-2"></i>
                                     </button>
+
                                     <div class="offcanvas-area d-lg-none">
-                                        <div class="offcanvas offcanvas-end" id="demo">
+                                        <!-- Parent Offcanvas -->
+                                        <div class="offcanvas offcanvas-end" tabindex="1" id="parentOffcanvas"
+                                            aria-labelledby="parentOffcanvasLabel">
                                             <div class="offcanvas-header">
-                                                <h1 class="offcanvas-title">
-                                                    <a class="navbar-brand" href="#">
-                                                        <img src="assets/images/Labour_Party_(UK)_logo.svg.png"
-                                                            alt="logo">
-                                                    </a>
-                                                </h1>
-                                                <button type="button" class="btn-close"
-                                                    data-bs-dismiss="offcanvas"></button>
+                                                <a id="parentOffcanvasLabel" class="navbar-brand" href="#">
+                                                    <img src="assets/images/Labour_Party_(UK)_logo.svg.png" alt="logo">
+                                                </a>
+                                                <button type="button" class="btn-close" data-bs-dismiss="offcanvas"
+                                                    aria-label="Close"></button>
                                             </div>
                                             <div class="offcanvas-body">
-                                                <div class="offcanvas-search d-flex align-items-center">
-                                                    <input type="search" class="w-100" placeholder="Search The Labour Party">
-                                                    <i class="bi bi-search"></i>
+                                                <div class="offcanvas-body p-0">
+                                                    <div class="offcanvas-search d-flex align-items-center">
+                                                        <span id="parentOffcanvasLabel">
+                                                            <input type="search" class="w-100"
+                                                                placeholder="Search The Labour Party">
+                                                            <i class="bi bi-search"></i>
+                                                        </span>
+                                                    </div>
                                                 </div>
+
+                                                <!-- Trigger button for Child Offcanvas inside the Parent Offcanvas -->
+                                                <div
+                                                    class="parent-offcanvas mt-3 d-flex align-items-center justify-content-between">
+                                                    Compaign for Labour
+                                                    <button class="btn" type="button" data-bs-toggle="offcanvas"
+                                                        data-bs-target="#childOffcanvas" aria-controls="childOffcanvas">
+                                                        <i class="bi bi-chevron-right"></i>
+                                                    </button>
+                                                </div>
+
+                                                <!-- secound-link -->
+                                                <div
+                                                    class="parent-offcanvas d-flex align-items-center justify-content-between">
+                                                    <a href="">
+                                                        Labour's Manifesto
+                                                    </a>
+                                                </div>
+
+                                                <!-- Third Link -->
+                                                <div
+                                                    class="parent-offcanvas d-flex align-items-center justify-content-between">
+                                                    Labour People
+                                                    <button class="btn" type="button" data-bs-toggle="offcanvas"
+                                                        data-bs-target="#secoundchildOffcanvas"
+                                                        aria-controls="secoundchildOffcanvas">
+                                                        <i class="bi bi-chevron-right"></i>
+                                                    </button>
+                                                </div>
+
+                                                <!-- Fourth Link -->
+                                                <div
+                                                    class="parent-offcanvas d-flex align-items-center justify-content-between">
+                                                    Updates
+                                                    <button class="btn" type="button" data-bs-toggle="offcanvas"
+                                                        data-bs-target="#thirdchildOffcanvas"
+                                                        aria-controls="thirdchildOffcanvas">
+                                                        <i class="bi bi-chevron-right"></i>
+                                                    </button>
+                                                </div>
+
+                                                <!-- fifth Link -->
+                                                <div
+                                                    class="parent-offcanvas d-flex align-items-center justify-content-between">
+                                                    About Us
+                                                    <button class="btn" type="button" data-bs-toggle="offcanvas"
+                                                        data-bs-target="#fourthchildOffcanvas"
+                                                        aria-controls="fourthchildOffcanvas">
+                                                        <i class="bi bi-chevron-right"></i>
+                                                    </button>
+                                                </div>
+
+                                                <!-- sixth Link -->
+                                                <div
+                                                    class="parent-offcanvas d-flex align-items-center justify-content-between">
+                                                    Members Area
+                                                    <button class="btn" type="button" data-bs-toggle="offcanvas"
+                                                        data-bs-target="#fifthchildOffcanvas"
+                                                        aria-controls="fifthchildOffcanvas">
+                                                        <i class="bi bi-chevron-right"></i>
+                                                    </button>
+                                                </div>
+
+                                                <!-- seventh Link -->
+                                                <div
+                                                    class="parent-offcanvas d-flex align-items-center justify-content-between">
+                                                    Conferance
+                                                    <button class="btn" type="button" data-bs-toggle="offcanvas"
+                                                        data-bs-target="#sixthchildOffcanvas"
+                                                        aria-controls="sixthchildOffcanvas">
+                                                        <i class="bi bi-chevron-right"></i>
+                                                    </button>
+                                                </div>
+
+                                                <!-- Now custom links -->
+                                                <div class="offcanvas-custom-links mt-3">
+                                                    <a href="" class="d-flex align-items-center fw-lighter">
+                                                        Volunteer
+                                                        <i class=" bi bi-arrow-right"></i>
+                                                    </a>
+                                                    <a href="" class="d-flex align-items-center py-4 fw-lighter">
+                                                        Donate
+                                                        <i class=" bi bi-arrow-right"></i>
+                                                    </a>
+                                                    <a href="" class="d-flex align-items-center fw-lighter">
+                                                        Join
+                                                        <i class=" bi bi-arrow-right"></i>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <!-- Child Offcanvas area -->
+                                        <!-- first-link first offcanvas -->
+                                        <div class="offcanvas offcanvas-end" tabindex="-1" id="childOffcanvas"
+                                            aria-labelledby="childOffcanvasLabel">
+                                            <div class="offcanvas-header">
+                                                <a id="parentOffcanvasLabel" class="navbar-brand" href="#">
+                                                    <img src="assets/images/Labour_Party_(UK)_logo.svg.png" alt="logo">
+                                                </a>
+                                                <button type="button" class="btn-close" data-bs-dismiss="offcanvas"
+                                                    aria-label="Close"></button>
+                                            </div>
+                                            <div class="offcanvas-body">
+                                                <div class="offcanvas-back">
+                                                    <i class="bi bi-arrow-left"></i>
+                                                </div>
+
+                                                <h6 class="subOffcanvas mt-4">
+                                                    <a href="" class="text-secoundry">Volunteer</a>
+                                                </h6>
+                                                <h6 class="py-4 subOffcanvas">
+                                                    <a href="" class="text-secoundry">Learn about campaigning</a>
+                                                </h6>
+                                                <h6 class="subOffcanvas">
+                                                    <a href="" class="text-secoundry">Fund our compaigns</a>
+                                                </h6>
+                                            </div>
+                                        </div>
+
+                                        <!-- third link secound offcanvas -->
+                                        <div class="offcanvas offcanvas-end" tabindex="-1" id="secoundchildOffcanvas"
+                                            aria-labelledby="childOffcanvasLabel">
+                                            <div class="offcanvas-header">
+                                                <a id="parentOffcanvasLabel" class="navbar-brand" href="#">
+                                                    <img src="assets/images/Labour_Party_(UK)_logo.svg.png" alt="logo">
+                                                </a>
+                                                <button type="button" class="btn-close" data-bs-dismiss="offcanvas"
+                                                    aria-label="Close"></button>
+                                            </div>
+                                            <div class="offcanvas-body">
+                                                <div class="offcanvas-back">
+                                                    <i class="bi bi-arrow-left"></i>
+                                                </div>
+                                                <h6 class="py-4 subOffcanvas">
+                                                    <a href="" class="text-secoundry">Meet the Labour Team</a>
+                                                </h6>
+                                                <h6 class="subOffcanvas">
+                                                    <a href="" class="text-secoundry">Keir Starmer</a>
+                                                </h6>
+                                                <h6 class="py-4 subOffcanvas">
+                                                    <a href="" class="text-secoundry">Cabinet</a>
+                                                </h6>
+                                                <h6 class="subOffcanvas">
+                                                    <a href="" class="text-secoundry">Metro Mayor</a>
+                                                </h6>
+                                            </div>
+                                        </div>
+
+                                        <!-- fourth link third offcanvas -->
+                                        <div class="offcanvas offcanvas-end" tabindex="-1" id="thirdchildOffcanvas"
+                                            aria-labelledby="childOffcanvasLabel">
+                                            <div class="offcanvas-header">
+                                                <a id="parentOffcanvasLabel" class="navbar-brand" href="#">
+                                                    <img src="assets/images/Labour_Party_(UK)_logo.svg.png" alt="logo">
+                                                </a>
+                                                <button type="button" class="btn-close" data-bs-dismiss="offcanvas"
+                                                    aria-label="Close"></button>
+                                            </div>
+                                            <div class="offcanvas-body">
+                                                <div class="offcanvas-back">
+                                                    <i class="bi bi-arrow-left"></i>
+                                                </div>
+                                                <h6 class="py-4 subOffcanvas">
+                                                    <a href="" class="text-secoundry">Latest from our campaign</a>
+                                                </h6>
+                                                <h6 class="subOffcanvas">
+                                                    <a href="" class="text-secoundry">Members Updates</a>
+                                                </h6>
+                                                <h6 class="py-4 subOffcanvas">
+                                                    <a href="" class="text-secoundry">Press releases</a>
+                                                </h6>
+                                            </div>
+                                        </div>
+
+                                        <!-- fifth link fourth offcanvas -->
+                                        <div class="offcanvas offcanvas-end" tabindex="-1" id="fourthchildOffcanvas"
+                                            aria-labelledby="childOffcanvasLabel">
+                                            <div class="offcanvas-header">
+                                                <a id="parentOffcanvasLabel" class="navbar-brand" href="#">
+                                                    <img src="assets/images/Labour_Party_(UK)_logo.svg.png" alt="logo">
+                                                </a>
+                                                <button type="button" class="btn-close" data-bs-dismiss="offcanvas"
+                                                    aria-label="Close"></button>
+                                            </div>
+                                            <div class="offcanvas-body">
+                                                <div class="offcanvas-back">
+                                                    <i class="bi bi-arrow-left"></i>
+                                                </div>
+                                                <h6 class="py-4 subOffcanvas">
+                                                    <a href="" class="text-secoundry">How we work</a>
+                                                </h6>
+
+                                                <h6 class="subOffcanvas">
+                                                    <a href="" class="text-secoundry">Groups</a>
+                                                </h6>
+
+                                                <h6 class="py-4 subOffcanvas">
+                                                    <a href="" class="text-secoundry">Socialist Sociaties</a>
+                                                </h6>
+
+                                                <h6 class="subOffcanvas">
+                                                    <a href="" class="text-secoundry">Afilliated trade unions</a>
+                                                </h6>
+
+                                                <h6 class="py-4 subOffcanvas">
+                                                    <a href="" class="text-secoundry">Contact Us</a>
+                                                </h6>
+
+                                                <h6 class="subOffcanvas">
+                                                    <a href="" class="text-secoundry">Careers</a>
+                                                </h6>
+                                            </div>
+                                        </div>
+
+                                        <!-- sixth link fifth offcanvas -->
+                                        <div class="offcanvas offcanvas-end" tabindex="-1" id="fifthchildOffcanvas"
+                                            aria-labelledby="childOffcanvasLabel">
+                                            <div class="offcanvas-header">
+                                                <a id="parentOffcanvasLabel" class="navbar-brand" href="#">
+                                                    <img src="assets/images/Labour_Party_(UK)_logo.svg.png" alt="logo">
+                                                </a>
+                                                <button type="button" class="btn-close" data-bs-dismiss="offcanvas"
+                                                    aria-label="Close"></button>
+                                            </div>
+                                            <div class="offcanvas-body">
+                                                <div class="offcanvas-back">
+                                                    <i class="bi bi-arrow-left"></i>
+                                                </div>
+                                                <h6 class="py-4 subOffcanvas">
+                                                    <a href="" class="text-secoundry">Members FAQs</a>
+                                                </h6>
+
+                                                <h6 class="subOffcanvas">
+                                                    <a href="" class="text-secoundry">Members Login</a>
+                                                </h6>
+
+                                                <h6 class="py-4 subOffcanvas">
+                                                    <a href="" class="text-secoundry">Resources</a>
+                                                </h6>
+
+                                                <h6 class="subOffcanvas">
+                                                    <a href="" class="text-secoundry">Councillor Hub</a>
+                                                </h6>
+
+                                                <h6 class="py-4 subOffcanvas">
+                                                    <a href="" class="text-secoundry">Code of conduct and complaints</a>
+                                                </h6>
+                                            </div>
+                                        </div>
+
+                                        <!-- seventh link sixth offcanvas -->
+                                        <div class="offcanvas offcanvas-end" tabindex="-1" id="sixthchildOffcanvas"
+                                            aria-labelledby="childOffcanvasLabel">
+                                            <div class="offcanvas-header">
+                                                <a id="parentOffcanvasLabel" class="navbar-brand" href="#">
+                                                    <img src="assets/images/Labour_Party_(UK)_logo.svg.png" alt="logo">
+                                                </a>
+                                                <button type="button" class="btn-close" data-bs-dismiss="offcanvas"
+                                                    aria-label="Close"></button>
+                                            </div>
+                                            <div class="offcanvas-body">
+                                                <div class="offcanvas-back">
+                                                    <i class="bi bi-arrow-left"></i>
+                                                </div>
+                                                <h6 class="py-4 subOffcanvas">
+                                                    <a href="" class="text-secoundry">Annual Conference</a>
+                                                </h6>
+
+                                                <h6 class="subOffcanvas">
+                                                    <a href="" class="text-secoundry">Information for Delegates</a>
+                                                </h6>
+
+                                                <h6 class="py-4 subOffcanvas">
+                                                    <a href="" class="text-secoundry">Commericial oppertunities</a>
+                                                </h6>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
+
                                 <div class="collapse navbar-collapse separation d-none d-lg-block "
                                     id="navbarSupportedContent">
                                     <div class="nav-links">
@@ -285,9 +570,6 @@
                             </div>
                         </nav>
                     </div>
-
-                    <!-- Offcanvas -->
-
                 </div>
                 <!-- hero caption -->
                 <div class="hero-positioning">
