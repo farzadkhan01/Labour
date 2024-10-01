@@ -45,6 +45,10 @@ body {
     }
 }
 
+
+.global-border:focus{
+    border: none;
+}
 /* =========================================================== */
 
 .navbar-brand img {
@@ -509,7 +513,22 @@ hero-positioning {
 }
 
 .special-small-screen-editing-login {
-    transform: translate(-303px, 9rem) !important;
+    transform: translate(-303px, 8.5rem) !important;
+}
+
+.special-collapsed-edit:focus {
+    border: none;
+
+}
+
+.custom-bi::before {
+    transform: rotate(180deg);
+    transition: all 0.3s;
+}
+
+.collapsed .bi::before {
+    transform: rotate(0deg);
+    transition: all 0.3s;
 }
 
 .btn.show {
@@ -518,6 +537,20 @@ hero-positioning {
 
 .dropup img {
     width: 25px;
+}
+
+.dropup .dropdown-toggle::after {
+    display: none;
+}
+
+.show .special-bi::before {
+    transform: rotate(180deg);
+    transition: 0.3s;
+}
+
+.custom-small-dropup i{
+    transform: rotate(0deg);
+    transition: all 0.3s;
 }
 
 .dropdown-about li a,
