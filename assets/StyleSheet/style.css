@@ -5,6 +5,7 @@
 
 :root {
     --links-color: rgb(228, 0, 59);
+    --hover-links-color: #9f0029;
     --light-black: #00000087;
     --white: #ffffff;
 }
@@ -46,9 +47,10 @@ body {
 }
 
 
-.global-border:focus{
+.global-border:focus {
     border: none;
 }
+
 /* =========================================================== */
 
 .navbar-brand img {
@@ -79,6 +81,12 @@ body {
     background: var(--links-color);
     color: white;
     font-size: 16px;
+}
+
+.nav-links button a:hover,
+.hero-caption a:hover {
+    transition: all 0.3s;
+    background: var(--hover-links-color);
 }
 
 .nav-links button a {
@@ -287,6 +295,11 @@ hero-positioning {
     opacity: 1;
 }
 
+.joining-carousel .carousel-indicators [data-bs-target]:hover {
+    background-color: #e0e0e0;
+    transition: 0.3s;
+}
+
 .carousel-indicators .active {
     background-color: var(--links-color) !important;
     color: white !important;
@@ -311,6 +324,11 @@ hero-positioning {
 
 .carousel-text a {
     color: var(--links-color);
+}
+
+.carousel-text a:hover {
+    color: var(--hover-links-color);
+    transition: 0.3s;
 }
 
 .carousel-link {
@@ -377,6 +395,11 @@ hero-positioning {
     font-size: 16px;
 }
 
+.change-caption a:hover {
+    background: var(--hover-links-color);
+    transition: 0.3s;
+}
+
 /* Section - 5 Team */
 .Team {
     padding-top: 5rem;
@@ -437,6 +460,11 @@ hero-positioning {
     font-size: 16px;
 }
 
+.team-link a:hover {
+    background: var(--hover-links-color);
+    transition: 0.3s;
+}
+
 .team-information {
     height: 30rem;
     background-image:
@@ -483,6 +511,15 @@ hero-positioning {
     padding: 3px 0;
 }
 
+.dropdown-info p:hover {
+    text-decoration: underline;
+    transition: 0.3s;
+}
+
+.no-hover:hover {
+    text-decoration: none !important;
+}
+
 .footer-links h2 {
     margin: 17px 0 8px 0;
 }
@@ -491,6 +528,11 @@ hero-positioning {
     font-size: 25px;
     margin: 0 5px;
     color: var(--light-black);
+}
+
+.social-links i:hover {
+    color: var(--links-color);
+    transition: 0.3s;
 }
 
 .copyright a:first-of-type {
@@ -504,7 +546,7 @@ hero-positioning {
 .dropdown-about {
     left: 19rem !important;
     width: 14rem;
-    transform: translate(-303px, -40px) !important;
+    transform: translate(-303px, -56px) !important;
 }
 
 /* spacial small screen editing */
@@ -548,7 +590,7 @@ hero-positioning {
     transition: 0.3s;
 }
 
-.custom-small-dropup i{
+.custom-small-dropup i {
     transform: rotate(0deg);
     transition: all 0.3s;
 }
