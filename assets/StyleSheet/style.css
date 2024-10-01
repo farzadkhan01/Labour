@@ -503,6 +503,14 @@ hero-positioning {
     transform: translate(-303px, -40px) !important;
 }
 
+/* spacial small screen editing */
+.special-small-screen-editing {
+    transform: translate(-303px, 7rem) !important;
+}
+
+.special-small-screen-editing-login {
+    transform: translate(-303px, 9rem) !important;
+}
 
 .btn.show {
     border: none;
@@ -573,8 +581,17 @@ hero-positioning {
     border-radius: 0;
 }
 
-.card-body { 
+.card-8 {
+    border-bottom: 1px solid rgb(0 0 0 / 21%);
+}
+
+.card-body {
     padding: 0;
+}
+
+/* social links */
+.terms {
+    display: ruby;
 }
 
 /* Media Quary */
