@@ -25,8 +25,7 @@ h2 {
 }
 
 body {
-
-    font-family: "Mingzat", sans-serif;
+    font-family: "Poppins", sans-serif;
     font-weight: 600;
     font-style: normal;
 }
@@ -90,8 +89,9 @@ body {
 }
 
 .nav-links button a {
-    padding: 4px 15px;
-    font-size: 12px;
+    padding: 5px 15px;
+    font-size: 14px;
+    letter-spacing: 1px;
 }
 
 .dropdown-menu {
@@ -176,6 +176,7 @@ body {
     color: var(--links-color) !important;
     font-size: 16px;
     padding-right: 20px;
+    font-weight: 400;
 }
 
 /* offcanvas */
@@ -287,7 +288,7 @@ hero-positioning {
     border-bottom: none;
     /* styling of button */
     font-size: 1.125rem;
-    margin-right: 2rem !important;
+    margin-right: 0.4rem !important;
     padding: 10px 20px;
     background-color: #f8f8f8;
     color: black;
@@ -680,8 +681,13 @@ hero-positioning {
     .nav-links button a,
     .hero-caption a {
         font-size: 14px;
+        padding: 4px 12px
     }
 
+    .hero-caption a {
+        font-size: 14px;
+        padding: 9px 18px
+    }
 }
 
 @media only screen and (max-width: 1400px) {
@@ -697,7 +703,7 @@ hero-positioning {
 
     /* <!-- Section - 2 Message --> */
     .message-video iframe {
-        width: 100%;
+        width: 95%;
         height: 25rem;
         border-radius: 15px;
     }
@@ -783,8 +789,6 @@ hero-positioning {
     }
 
     .joining-carousel .carousel-indicators [data-bs-target] {
-        padding: 7px 17px;
-        font-size: 12px;
         margin-right: 20px !important;
         margin-bottom: 20px !important;
     }
